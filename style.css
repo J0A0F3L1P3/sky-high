@@ -1,0 +1,337 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+section{
+    margin: 30px 0px;
+    width: 80vw;
+}
+
+/* CABEÇALHO */
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 10px;
+    height: 7vh;
+    width: 100vw;
+
+}
+
+header ul{
+    display: flex;
+    list-style: none;
+}
+
+header ul li{
+    display: flex;
+    align-items: center;
+    height: 10vh;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+}
+
+header img{
+    height: 60%;
+    width: 30px;
+}
+
+header input{
+    display: none;
+}
+
+header .menu{
+    display: none;
+}
+
+/* PRIMEIRA SEÇÃO */
+.section1{
+    height: 85vh;
+    border-radius: 20px;
+    background-image: url("src/img/tokyoJapan.webp");
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16vh 0px 5vh;
+}
+
+.section1 h2{
+    font-size: 50px;
+    color: #fff;
+}
+
+.section1 .agenda{
+    backdrop-filter: blur(10px);
+}
+
+/* SEGUNDA SEÇÃO */
+.section2 .divOffers{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 30px;
+}
+
+.section2 .divOffers .div{
+    font-size: larger;
+}
+
+.divOffers .div div{
+    width: 100%;
+    height: 275px;
+    border-radius: 20px;
+}
+
+.img1{
+    background-image: url("src/img/hyattCentricVictoria.jpeg");
+    background-size: cover;
+    background-position: 95% center;
+}
+
+.img2{
+    background-image: url("src/img/hotelSunroutePlaza.jpeg");
+    background-size: 230%;
+    background-position: 22% 90%;
+}
+
+.img3{
+    background-image: url("src/img/bangkokMarriottMarquis.jpeg");
+    background-size: cover;
+    background-position: 80% center;
+}
+
+.img4{
+    background-image: url("src/img/LOTTE.jpg");
+    background-size: cover;
+    background-position: 80% center;
+}
+
+.section2 div .div .localHotel{
+    font-weight: bold;
+}
+
+.section2 div .div .nameHotel{
+    color: #777;
+}
+
+.section2 div .div .priceHotel{
+    font-weight: bolder;
+    font-weight: 1000;
+}
+
+/* TERCEIRA SEÇÃO */
+.section3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 80vw;
+}
+
+.section3 h2{
+    margin-bottom: 20px;
+}
+
+.categories{
+    width: 100%;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 30px;
+}
+
+.divCategories{
+    height: 190px;
+    width: 100%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    font-weight: bolder;
+    overflow: hidden;
+}
+
+.divCategories div{
+    width: 100%;
+    text-align: center;
+}
+
+.divCategories img{
+    height: 60px;
+    width: 60px;
+}
+
+.divCategories p{
+    font-weight: auto;
+    font-size: medium;
+}
+
+.categories .divCategories:nth-child(1){
+    background-image: url("src/img/beach.webp");
+    background-size: cover;
+}
+
+.categories .divCategories:nth-child(2){
+    background-image: url("src/img/city.webp");
+    background-size: cover;
+}
+
+.categories .divCategories:nth-child(3){
+    background-image: url("src/img/pedra-empilhada.webp");
+    background-size: cover;
+}
+
+.categories .divCategories:nth-child(4){
+    background-image: url("src/img/teleferico.webp");
+    background-size: cover;
+}
+
+.categories .divCategories:nth-child(5){
+    background-image: url("src/img/tour.webp");
+    background-size: cover;
+}
+
+.categories .divCategories:nth-child(6){
+    background-image: url("src/img/cachoeirinha.webp");
+    background-size: cover;
+}
+
+/* SEÇÃO QUATRO */
+.section4{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 80vw;
+}
+
+.section4 h2{
+    margin-bottom: 20px;
+}
+
+.popDestinations{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.popDestinations div{
+    height: 290px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 20px 20px;
+    color: #fff;
+}
+
+.popDestinations div:nth-child(1){
+    background-image: linear-gradient(to bottom, transparent 70%, #000 100%),
+                        url("src/img/hong-kong-cidade-vista-de-cima.webp");
+    grid-area: 1 / 1 / 2 / 7;
+    background-size: cover;
+    background-position: center 60%;
+}
+
+.popDestinations div:nth-child(2){
+    background-image: linear-gradient(to bottom, transparent 70%, #000 100%),
+                        url("src/img/Bangkok.webp");
+    grid-area: 2 / 1 / 3 / 4;
+    background-size: cover;
+    background-position: center bottom;
+}
+
+.popDestinations div:nth-child(3){
+    background-image: linear-gradient(to bottom, transparent 70%, #000 100%),
+                        url("src/img/singapore.webp");
+    grid-area: 2 / 4 / 3 / 7;
+    background-size: cover;
+    background-position: center center;
+}
+
+.popDestinations div:nth-child(4){
+    background-image: linear-gradient(to bottom, transparent 70%, #000 100%),
+                        url("src/img/united-arab-emirates.webp");
+    grid-area: 3 / 1 / 4 / 3;
+    background-size: cover;
+    background-position: center center;
+}
+
+.popDestinations div:nth-child(5){
+    background-image: linear-gradient(to bottom, transparent 70%, #000 100%),
+                        url("src/img/london-bridge.webp");
+    grid-area: 3 / 3 / 4 / 5;
+    background-size: 150%;
+    background-position: 85% center;
+}
+
+.popDestinations div:nth-child(6){
+    background-image: linear-gradient(to bottom, transparent 70%, #000 100%),
+                        url("src/img/tower-paris.webp");
+    grid-area: 3 / 5 / 4 / 7;
+    background-size: cover;
+    background-position: center center;
+}
+
+/* FOOTER */
+footer{
+    height: 50vh;
+    width: 100vw;
+    background-color: #ddd;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer .footer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 80%;
+    width: 80%;
+}
+
+footer .footer div{
+    display: flex;
+    flex-direction: column;
+}
+
+footer .footer div p{
+    margin: 15px 0px;
+}
+
+footer .footer div a{
+    margin: 15px 0px;
+}
+
+footer .footer div a:hover{
+    margin: 15px 0px;
+}
