@@ -9,31 +9,47 @@
 </head>
 <body>
     <header>
-        <h1>Sky High</h1>
+        <a href="#home"><h1>Sky High</h1></a>
         <nav>
             <ul>
-                <li><a href="#package">Package</a></li>
-                <li><a href="#destiantion">Destination</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#specialOffers">Offers</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#popularDestination">Popular</a></li>
+                <li><a href="#blog">Blog</a></li>
             </ul>
         </nav>
         <label for="menu"><img src="src/img/hmbIcon.png" alt=""></label>
         <input type="checkbox" name="menu" id="menu">
-        <div class="menu"></div>
+        <div class="menu">
+            <form action="script.js">
+                <input type="text" name="search" id="search" placeholder="Search your tour">
+                <input type="button" value="search" id="searchBtn">
+            </form>
+            <hr>
+            <nav class="links">
+                <ul>
+                    <li><h3>Purchase and Payment</h3></li>
+                    <li><a href="#">How to pay</a></li>
+                    <li><a href="#">Documents</a></li>
+                    <li><a href="#">Change or cancel tour</a></li>
+                    <li><a href="#">Regulation</a></li>
+                </ul>
+                <ul>
+                    <li><h3>Before traveling</h3></li>
+                    <li><a href="#">Visa</a></li>
+                    <li><a href="#">Insurance</a></li>
+                    <li><a href="#">Travel advisory</a></li>
+                    <li><a href="#">Safe trips</a></li>
+                    <li><a href="#">Co-payment</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
-        <section class="section1">
+        <section class="section1" id="home">
             <h2>Tokyo, Japan</h2>
-            <div class="agenda">
-                <input type="checkbox" name="" id="">
-                <input type="checkbox" name="" id="">
-                <input type="month" name="" id="">
-                <input type="month" name="" id="">
-                <input type="number" name="" id="">
-                <input type="submit" value="Search">
-            </div>
         </section>
-        <section class="section2">
+        <section class="section2" id="specialOffers">
             <h2>Special Offers</h2>
             <div class="divOffers">
                 <div class="div">
@@ -62,7 +78,7 @@
                 </div>
             </div>
         </section>
-        <section class="section3">
+        <section class="section3" id="categories">
             <h2>Categories</h2>
             <div class="categories">
                 <div class="divCategories">
@@ -109,7 +125,7 @@
                 </div>
             </div>
         </section>
-        <section class="section4">
+        <section class="section4" id="popularDestination">
             <h2>Popular destinations</h2>
             <div class="popDestinations">
                 <div>
@@ -138,63 +154,52 @@
                 </div>
             </div>
         </section>
-        <section class="section5">
+        <section class="section5" id="blog">
             <h2>Blog</h2>
             <div>
-                <div>
-
-                </div>
-                <div>
-
-                </div>
-                <div>
-
-                </div>
-                <div>
-
-                </div>
-                <div>
-
-                </div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
             </div>
         </section>
     </main>
     <footer>
         <div class="footer">
-            <div>
-                <h3>Sky High</h3>
-                <p>&copy; 2021 Sky High</p>
-                <p>All Right Reserved</p>
-                <!-- <ul>
-                    <li><img src="" alt=""></li>
-                    <li><img src="" alt=""></li>
-                    <li><img src="" alt=""></li>
-                    <li><img src="" alt=""></li>
-                </ul> -->
-            </div>
-            <div>
-                <h3>Purchase and Payment</h3>
-                <a href="#">How to pay</a>
-                <a href="#">Documents</a>
-                <a href="#">Change or terminate tour</a>
-                <a href="#">Regulation</a>
-            </div>
-            <div>
-                <h3>Before traveling</h3>
-                <a href="#">Visa</a>
-                <a href="#">Insurance</a>
-                <a href="#">Travel advisory</a>
-                <a href="#">Safe trips</a>
-                <a href="#">Co-payment</a>
-            </div>
-            <div>
-                <h3>About Us</h3>
-                <a href="#">General information</a>
-                <a href="#">News</a>
-                <a href="#">Contacts</a>
-                <a href="#">Terms</a>
-                <a href="#">Help</a>
-            </div>
+            <ul>
+                <li><h3>Sky High</h3></li>
+                <li><p>&copy; 2021 Sky High</p></li>
+                <li><p>All Right Reserved</p></li>
+                <li>
+                    <img src="src/img/facebook.png" alt="">
+                    <img src="src/img/twitter.png" alt="">
+                    <img src="src/img/pinterest.png" alt="">
+                </li>
+            </ul>
+            <ul>
+                <li><h3>Purchase and Payment</h3></li>
+                <li><a href="#">How to pay</a></li>
+                <li><a href="#">Documents</a></li>
+                <li><a href="#">Change or terminate tour</a></li>
+                <li><a href="#">Regulation</a></li>
+            </ul>
+            <ul>
+                <li><h3>Before traveling</h3></li>
+                <li><a href="#">Visa</a></li>
+                <li><a href="#">Insurance</a></li>
+                <li><a href="#">Travel advisory</a></li>
+                <li><a href="#">Safe trips</a></li>
+                <li><a href="#">Co-payment</a></li>
+            </ul>
+            <ul>
+                <li><h3>About Us</h3></li>
+                <li><a href="#">General information</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
         </div>
     </footer>
 </body>
